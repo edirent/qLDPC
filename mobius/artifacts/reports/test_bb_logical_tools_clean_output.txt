@@ -1,0 +1,6 @@
+gross paper basis ok k= 12 Xmax= 12 Zmax= 12
+two-gross paper basis ok k= 12 Xmax= 20 Zmax= 20
+144-standard canonical basis ok k= 12
+288-standard canonical basis ok k= 12
+756 canonical basis ok k= 16
+legacy diagnostic ok {'n': 288, 'expected_k': 12, 'old_Z_rows': 6, 'old_X_rows': 6, 'old_rows_equal_k': False, 'old_z_commutes_with_x_checks': True, 'old_x_commutes_with_z_checks': True, 'old_Z_rank_increment_mod_Z_stabilizers': 0, 'old_X_rank_increment_mod_X_stabilizers': 0, 'old_pairing_rank': 0}

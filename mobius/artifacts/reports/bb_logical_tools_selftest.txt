@@ -1,0 +1,10 @@
+canonical  72: k=12, max_wX=12, max_wZ=14
+canonical  90: k=8, max_wX=14, max_wZ=14
+canonical 108: k=8, max_wX=16, max_wZ=16
+canonical 144: k=12, max_wX=22, max_wZ=24
+canonical 288: k=12, max_wX=48, max_wZ=34
+canonical 360: k=12, max_wX=64, max_wZ=68
+canonical 756: k=16, max_wX=144, max_wZ=150
+paper gross: k=12, wt=12
+paper two-gross: k=12, wt=20
+legacy 288-standard diagnostic: {'n': 288, 'expected_k': 12, 'old_Z_rows': 6, 'old_X_rows': 6, 'old_rows_equal_k': False, 'old_z_commutes_with_x_checks': True, 'old_x_commutes_with_z_checks': True, 'old_Z_rank_increment_mod_Z_stabilizers': 0, 'old_X_rank_increment_mod_X_stabilizers': 0, 'old_pairing_rank': 0}

@@ -1,0 +1,3740 @@
+{
+  "l": 12,
+  "m": 12,
+  "n": 288,
+  "k": 12,
+  "A_exp": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      3,
+      11
+    ]
+  ],
+  "B_exp": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      11,
+      9
+    ]
+  ],
+  "source": "Tour-de-gross Appendix A.1 two-gross basis",
+  "notes": "Named q1..q12 architecture basis; stabilizer reduction is disabled by default to preserve LPU/connectivity structure.",
+  "validation": {
+    "valid": true,
+    "expected_k": 12,
+    "num_x": 12,
+    "num_z": 12,
+    "z_commutes_with_x_checks": true,
+    "x_commutes_with_z_checks": true,
+    "canonical_pairing": true,
+    "z_nonstabilizer_quotient_rank": 12,
+    "x_nonstabilizer_quotient_rank": 12,
+    "pairing_rank": 12,
+    "pairing": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "X_weights": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "Z_weights": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "logical_qubits": [
+    {
+      "logical": "q1",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: x^2 + x^2y^2 + x^3y^3 + x^4y^3 + x^6y^7 + x^7y^4 + x^7y^11 + x^8y^2 + x^8y^6 + x^9y^2 | R: xy^9 + xy^10 + x^3y^2 + x^4y^8 + x^5y^3 + x^6y^7 + x^7y^3 + x^8y^4 + x^8y^5 + x^11y^3",
+      "Z_polynomial": "L: x^2y^3 + x^2y^4 + x^2y^5 + x^2y^6 + x^2y^7 + x^5y^6 + x^8y^5 + x^11y^3 + x^11y^4 + x^11y^7 | R: y^5 + y^8 + xy^8 + x^2y^11 + x^3y^2 + x^5y^5 + x^7y^8 + x^8y^8 + x^9y^11 + x^11y^2",
+      "X_support": [
+        {
+          "index": 24,
+          "side": "L",
+          "x": 2,
+          "y": 0,
+          "label": "L:x^2"
+        },
+        {
+          "index": 26,
+          "side": "L",
+          "x": 2,
+          "y": 2,
+          "label": "L:x^2y^2"
+        },
+        {
+          "index": 39,
+          "side": "L",
+          "x": 3,
+          "y": 3,
+          "label": "L:x^3y^3"
+        },
+        {
+          "index": 51,
+          "side": "L",
+          "x": 4,
+          "y": 3,
+          "label": "L:x^4y^3"
+        },
+        {
+          "index": 79,
+          "side": "L",
+          "x": 6,
+          "y": 7,
+          "label": "L:x^6y^7"
+        },
+        {
+          "index": 88,
+          "side": "L",
+          "x": 7,
+          "y": 4,
+          "label": "L:x^7y^4"
+        },
+        {
+          "index": 95,
+          "side": "L",
+          "x": 7,
+          "y": 11,
+          "label": "L:x^7y^11"
+        },
+        {
+          "index": 98,
+          "side": "L",
+          "x": 8,
+          "y": 2,
+          "label": "L:x^8y^2"
+        },
+        {
+          "index": 102,
+          "side": "L",
+          "x": 8,
+          "y": 6,
+          "label": "L:x^8y^6"
+        },
+        {
+          "index": 110,
+          "side": "L",
+          "x": 9,
+          "y": 2,
+          "label": "L:x^9y^2"
+        },
+        {
+          "index": 165,
+          "side": "R",
+          "x": 1,
+          "y": 9,
+          "label": "R:xy^9"
+        },
+        {
+          "index": 166,
+          "side": "R",
+          "x": 1,
+          "y": 10,
+          "label": "R:xy^10"
+        },
+        {
+          "index": 182,
+          "side": "R",
+          "x": 3,
+          "y": 2,
+          "label": "R:x^3y^2"
+        },
+        {
+          "index": 200,
+          "side": "R",
+          "x": 4,
+          "y": 8,
+          "label": "R:x^4y^8"
+        },
+        {
+          "index": 207,
+          "side": "R",
+          "x": 5,
+          "y": 3,
+          "label": "R:x^5y^3"
+        },
+        {
+          "index": 223,
+          "side": "R",
+          "x": 6,
+          "y": 7,
+          "label": "R:x^6y^7"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 244,
+          "side": "R",
+          "x": 8,
+          "y": 4,
+          "label": "R:x^8y^4"
+        },
+        {
+          "index": 245,
+          "side": "R",
+          "x": 8,
+          "y": 5,
+          "label": "R:x^8y^5"
+        },
+        {
+          "index": 279,
+          "side": "R",
+          "x": 11,
+          "y": 3,
+          "label": "R:x^11y^3"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 27,
+          "side": "L",
+          "x": 2,
+          "y": 3,
+          "label": "L:x^2y^3"
+        },
+        {
+          "index": 28,
+          "side": "L",
+          "x": 2,
+          "y": 4,
+          "label": "L:x^2y^4"
+        },
+        {
+          "index": 29,
+          "side": "L",
+          "x": 2,
+          "y": 5,
+          "label": "L:x^2y^5"
+        },
+        {
+          "index": 30,
+          "side": "L",
+          "x": 2,
+          "y": 6,
+          "label": "L:x^2y^6"
+        },
+        {
+          "index": 31,
+          "side": "L",
+          "x": 2,
+          "y": 7,
+          "label": "L:x^2y^7"
+        },
+        {
+          "index": 66,
+          "side": "L",
+          "x": 5,
+          "y": 6,
+          "label": "L:x^5y^6"
+        },
+        {
+          "index": 101,
+          "side": "L",
+          "x": 8,
+          "y": 5,
+          "label": "L:x^8y^5"
+        },
+        {
+          "index": 135,
+          "side": "L",
+          "x": 11,
+          "y": 3,
+          "label": "L:x^11y^3"
+        },
+        {
+          "index": 136,
+          "side": "L",
+          "x": 11,
+          "y": 4,
+          "label": "L:x^11y^4"
+        },
+        {
+          "index": 139,
+          "side": "L",
+          "x": 11,
+          "y": 7,
+          "label": "L:x^11y^7"
+        },
+        {
+          "index": 149,
+          "side": "R",
+          "x": 0,
+          "y": 5,
+          "label": "R:y^5"
+        },
+        {
+          "index": 152,
+          "side": "R",
+          "x": 0,
+          "y": 8,
+          "label": "R:y^8"
+        },
+        {
+          "index": 164,
+          "side": "R",
+          "x": 1,
+          "y": 8,
+          "label": "R:xy^8"
+        },
+        {
+          "index": 179,
+          "side": "R",
+          "x": 2,
+          "y": 11,
+          "label": "R:x^2y^11"
+        },
+        {
+          "index": 182,
+          "side": "R",
+          "x": 3,
+          "y": 2,
+          "label": "R:x^3y^2"
+        },
+        {
+          "index": 209,
+          "side": "R",
+          "x": 5,
+          "y": 5,
+          "label": "R:x^5y^5"
+        },
+        {
+          "index": 236,
+          "side": "R",
+          "x": 7,
+          "y": 8,
+          "label": "R:x^7y^8"
+        },
+        {
+          "index": 248,
+          "side": "R",
+          "x": 8,
+          "y": 8,
+          "label": "R:x^8y^8"
+        },
+        {
+          "index": 263,
+          "side": "R",
+          "x": 9,
+          "y": 11,
+          "label": "R:x^9y^11"
+        },
+        {
+          "index": 278,
+          "side": "R",
+          "x": 11,
+          "y": 2,
+          "label": "R:x^11y^2"
+        }
+      ]
+    },
+    {
+      "logical": "q2",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: x^2y^3 + x^2y^5 + x^3y^6 + x^4y^6 + x^6y^10 + x^7y^2 + x^7y^7 + x^8y^5 + x^8y^9 + x^9y^5 | R: x + xy + x^3y^5 + x^4y^11 + x^5y^6 + x^6y^10 + x^7y^6 + x^8y^7 + x^8y^8 + x^11y^6",
+      "Z_polynomial": "L: y^4 + y^5 + y^8 + x^3y^4 + x^3y^5 + x^3y^6 + x^3y^7 + x^3y^8 + x^6y^7 + x^9y^6 | R: y^3 + xy^6 + xy^9 + x^2y^9 + x^3 + x^4y^3 + x^6y^6 + x^8y^9 + x^9y^9 + x^10",
+      "X_support": [
+        {
+          "index": 27,
+          "side": "L",
+          "x": 2,
+          "y": 3,
+          "label": "L:x^2y^3"
+        },
+        {
+          "index": 29,
+          "side": "L",
+          "x": 2,
+          "y": 5,
+          "label": "L:x^2y^5"
+        },
+        {
+          "index": 42,
+          "side": "L",
+          "x": 3,
+          "y": 6,
+          "label": "L:x^3y^6"
+        },
+        {
+          "index": 54,
+          "side": "L",
+          "x": 4,
+          "y": 6,
+          "label": "L:x^4y^6"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 86,
+          "side": "L",
+          "x": 7,
+          "y": 2,
+          "label": "L:x^7y^2"
+        },
+        {
+          "index": 91,
+          "side": "L",
+          "x": 7,
+          "y": 7,
+          "label": "L:x^7y^7"
+        },
+        {
+          "index": 101,
+          "side": "L",
+          "x": 8,
+          "y": 5,
+          "label": "L:x^8y^5"
+        },
+        {
+          "index": 105,
+          "side": "L",
+          "x": 8,
+          "y": 9,
+          "label": "L:x^8y^9"
+        },
+        {
+          "index": 113,
+          "side": "L",
+          "x": 9,
+          "y": 5,
+          "label": "L:x^9y^5"
+        },
+        {
+          "index": 156,
+          "side": "R",
+          "x": 1,
+          "y": 0,
+          "label": "R:x"
+        },
+        {
+          "index": 157,
+          "side": "R",
+          "x": 1,
+          "y": 1,
+          "label": "R:xy"
+        },
+        {
+          "index": 185,
+          "side": "R",
+          "x": 3,
+          "y": 5,
+          "label": "R:x^3y^5"
+        },
+        {
+          "index": 203,
+          "side": "R",
+          "x": 4,
+          "y": 11,
+          "label": "R:x^4y^11"
+        },
+        {
+          "index": 210,
+          "side": "R",
+          "x": 5,
+          "y": 6,
+          "label": "R:x^5y^6"
+        },
+        {
+          "index": 226,
+          "side": "R",
+          "x": 6,
+          "y": 10,
+          "label": "R:x^6y^10"
+        },
+        {
+          "index": 234,
+          "side": "R",
+          "x": 7,
+          "y": 6,
+          "label": "R:x^7y^6"
+        },
+        {
+          "index": 247,
+          "side": "R",
+          "x": 8,
+          "y": 7,
+          "label": "R:x^8y^7"
+        },
+        {
+          "index": 248,
+          "side": "R",
+          "x": 8,
+          "y": 8,
+          "label": "R:x^8y^8"
+        },
+        {
+          "index": 282,
+          "side": "R",
+          "x": 11,
+          "y": 6,
+          "label": "R:x^11y^6"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 4,
+          "side": "L",
+          "x": 0,
+          "y": 4,
+          "label": "L:y^4"
+        },
+        {
+          "index": 5,
+          "side": "L",
+          "x": 0,
+          "y": 5,
+          "label": "L:y^5"
+        },
+        {
+          "index": 8,
+          "side": "L",
+          "x": 0,
+          "y": 8,
+          "label": "L:y^8"
+        },
+        {
+          "index": 40,
+          "side": "L",
+          "x": 3,
+          "y": 4,
+          "label": "L:x^3y^4"
+        },
+        {
+          "index": 41,
+          "side": "L",
+          "x": 3,
+          "y": 5,
+          "label": "L:x^3y^5"
+        },
+        {
+          "index": 42,
+          "side": "L",
+          "x": 3,
+          "y": 6,
+          "label": "L:x^3y^6"
+        },
+        {
+          "index": 43,
+          "side": "L",
+          "x": 3,
+          "y": 7,
+          "label": "L:x^3y^7"
+        },
+        {
+          "index": 44,
+          "side": "L",
+          "x": 3,
+          "y": 8,
+          "label": "L:x^3y^8"
+        },
+        {
+          "index": 79,
+          "side": "L",
+          "x": 6,
+          "y": 7,
+          "label": "L:x^6y^7"
+        },
+        {
+          "index": 114,
+          "side": "L",
+          "x": 9,
+          "y": 6,
+          "label": "L:x^9y^6"
+        },
+        {
+          "index": 147,
+          "side": "R",
+          "x": 0,
+          "y": 3,
+          "label": "R:y^3"
+        },
+        {
+          "index": 162,
+          "side": "R",
+          "x": 1,
+          "y": 6,
+          "label": "R:xy^6"
+        },
+        {
+          "index": 165,
+          "side": "R",
+          "x": 1,
+          "y": 9,
+          "label": "R:xy^9"
+        },
+        {
+          "index": 177,
+          "side": "R",
+          "x": 2,
+          "y": 9,
+          "label": "R:x^2y^9"
+        },
+        {
+          "index": 180,
+          "side": "R",
+          "x": 3,
+          "y": 0,
+          "label": "R:x^3"
+        },
+        {
+          "index": 195,
+          "side": "R",
+          "x": 4,
+          "y": 3,
+          "label": "R:x^4y^3"
+        },
+        {
+          "index": 222,
+          "side": "R",
+          "x": 6,
+          "y": 6,
+          "label": "R:x^6y^6"
+        },
+        {
+          "index": 249,
+          "side": "R",
+          "x": 8,
+          "y": 9,
+          "label": "R:x^8y^9"
+        },
+        {
+          "index": 261,
+          "side": "R",
+          "x": 9,
+          "y": 9,
+          "label": "R:x^9y^9"
+        },
+        {
+          "index": 264,
+          "side": "R",
+          "x": 10,
+          "y": 0,
+          "label": "R:x^10"
+        }
+      ]
+    },
+    {
+      "logical": "q3",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: y^9 + x^5y^7 + x^5y^9 + x^6y^10 + x^7y^10 + x^9y^2 + x^10y^6 + x^10y^11 + x^11y + x^11y^9 | R: x^2y^10 + x^4y^4 + x^4y^5 + x^6y^9 + x^7y^3 + x^8y^10 + x^9y^2 + x^10y^10 + x^11 + x^11y^11",
+      "Z_polynomial": "L: y^5 + x^3y^3 + x^3y^4 + x^3y^7 + x^6y^3 + x^6y^4 + x^6y^5 + x^6y^6 + x^6y^7 + x^9y^6 | R: y^8 + xy^11 + x^3y^2 + x^4y^5 + x^4y^8 + x^5y^8 + x^6y^11 + x^7y^2 + x^9y^5 + x^11y^8",
+      "X_support": [
+        {
+          "index": 9,
+          "side": "L",
+          "x": 0,
+          "y": 9,
+          "label": "L:y^9"
+        },
+        {
+          "index": 67,
+          "side": "L",
+          "x": 5,
+          "y": 7,
+          "label": "L:x^5y^7"
+        },
+        {
+          "index": 69,
+          "side": "L",
+          "x": 5,
+          "y": 9,
+          "label": "L:x^5y^9"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 94,
+          "side": "L",
+          "x": 7,
+          "y": 10,
+          "label": "L:x^7y^10"
+        },
+        {
+          "index": 110,
+          "side": "L",
+          "x": 9,
+          "y": 2,
+          "label": "L:x^9y^2"
+        },
+        {
+          "index": 126,
+          "side": "L",
+          "x": 10,
+          "y": 6,
+          "label": "L:x^10y^6"
+        },
+        {
+          "index": 131,
+          "side": "L",
+          "x": 10,
+          "y": 11,
+          "label": "L:x^10y^11"
+        },
+        {
+          "index": 133,
+          "side": "L",
+          "x": 11,
+          "y": 1,
+          "label": "L:x^11y"
+        },
+        {
+          "index": 141,
+          "side": "L",
+          "x": 11,
+          "y": 9,
+          "label": "L:x^11y^9"
+        },
+        {
+          "index": 178,
+          "side": "R",
+          "x": 2,
+          "y": 10,
+          "label": "R:x^2y^10"
+        },
+        {
+          "index": 196,
+          "side": "R",
+          "x": 4,
+          "y": 4,
+          "label": "R:x^4y^4"
+        },
+        {
+          "index": 197,
+          "side": "R",
+          "x": 4,
+          "y": 5,
+          "label": "R:x^4y^5"
+        },
+        {
+          "index": 225,
+          "side": "R",
+          "x": 6,
+          "y": 9,
+          "label": "R:x^6y^9"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 250,
+          "side": "R",
+          "x": 8,
+          "y": 10,
+          "label": "R:x^8y^10"
+        },
+        {
+          "index": 254,
+          "side": "R",
+          "x": 9,
+          "y": 2,
+          "label": "R:x^9y^2"
+        },
+        {
+          "index": 274,
+          "side": "R",
+          "x": 10,
+          "y": 10,
+          "label": "R:x^10y^10"
+        },
+        {
+          "index": 276,
+          "side": "R",
+          "x": 11,
+          "y": 0,
+          "label": "R:x^11"
+        },
+        {
+          "index": 287,
+          "side": "R",
+          "x": 11,
+          "y": 11,
+          "label": "R:x^11y^11"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 5,
+          "side": "L",
+          "x": 0,
+          "y": 5,
+          "label": "L:y^5"
+        },
+        {
+          "index": 39,
+          "side": "L",
+          "x": 3,
+          "y": 3,
+          "label": "L:x^3y^3"
+        },
+        {
+          "index": 40,
+          "side": "L",
+          "x": 3,
+          "y": 4,
+          "label": "L:x^3y^4"
+        },
+        {
+          "index": 43,
+          "side": "L",
+          "x": 3,
+          "y": 7,
+          "label": "L:x^3y^7"
+        },
+        {
+          "index": 75,
+          "side": "L",
+          "x": 6,
+          "y": 3,
+          "label": "L:x^6y^3"
+        },
+        {
+          "index": 76,
+          "side": "L",
+          "x": 6,
+          "y": 4,
+          "label": "L:x^6y^4"
+        },
+        {
+          "index": 77,
+          "side": "L",
+          "x": 6,
+          "y": 5,
+          "label": "L:x^6y^5"
+        },
+        {
+          "index": 78,
+          "side": "L",
+          "x": 6,
+          "y": 6,
+          "label": "L:x^6y^6"
+        },
+        {
+          "index": 79,
+          "side": "L",
+          "x": 6,
+          "y": 7,
+          "label": "L:x^6y^7"
+        },
+        {
+          "index": 114,
+          "side": "L",
+          "x": 9,
+          "y": 6,
+          "label": "L:x^9y^6"
+        },
+        {
+          "index": 152,
+          "side": "R",
+          "x": 0,
+          "y": 8,
+          "label": "R:y^8"
+        },
+        {
+          "index": 167,
+          "side": "R",
+          "x": 1,
+          "y": 11,
+          "label": "R:xy^11"
+        },
+        {
+          "index": 182,
+          "side": "R",
+          "x": 3,
+          "y": 2,
+          "label": "R:x^3y^2"
+        },
+        {
+          "index": 197,
+          "side": "R",
+          "x": 4,
+          "y": 5,
+          "label": "R:x^4y^5"
+        },
+        {
+          "index": 200,
+          "side": "R",
+          "x": 4,
+          "y": 8,
+          "label": "R:x^4y^8"
+        },
+        {
+          "index": 212,
+          "side": "R",
+          "x": 5,
+          "y": 8,
+          "label": "R:x^5y^8"
+        },
+        {
+          "index": 227,
+          "side": "R",
+          "x": 6,
+          "y": 11,
+          "label": "R:x^6y^11"
+        },
+        {
+          "index": 230,
+          "side": "R",
+          "x": 7,
+          "y": 2,
+          "label": "R:x^7y^2"
+        },
+        {
+          "index": 257,
+          "side": "R",
+          "x": 9,
+          "y": 5,
+          "label": "R:x^9y^5"
+        },
+        {
+          "index": 284,
+          "side": "R",
+          "x": 11,
+          "y": 8,
+          "label": "R:x^11y^8"
+        }
+      ]
+    },
+    {
+      "logical": "q4",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: xy + xy^11 + x^2y^2 + x^3y^2 + x^5y^6 + x^6y^3 + x^6y^10 + x^7y + x^7y^5 + x^8y | R: y^8 + y^9 + x^2y + x^3y^7 + x^4y^2 + x^5y^6 + x^6y^2 + x^7y^3 + x^7y^4 + x^10y^2",
+      "Z_polynomial": "L: xy^9 + x^4y^7 + x^4y^8 + x^4y^11 + x^7y^7 + x^7y^8 + x^7y^9 + x^7y^10 + x^7y^11 + x^10y^10 | R: 1 + x + x^2y^3 + x^4y^6 + x^5 + x^5y^9 + x^6 + x^7y^3 + x^8y^6 + x^10y^9",
+      "X_support": [
+        {
+          "index": 13,
+          "side": "L",
+          "x": 1,
+          "y": 1,
+          "label": "L:xy"
+        },
+        {
+          "index": 23,
+          "side": "L",
+          "x": 1,
+          "y": 11,
+          "label": "L:xy^11"
+        },
+        {
+          "index": 26,
+          "side": "L",
+          "x": 2,
+          "y": 2,
+          "label": "L:x^2y^2"
+        },
+        {
+          "index": 38,
+          "side": "L",
+          "x": 3,
+          "y": 2,
+          "label": "L:x^3y^2"
+        },
+        {
+          "index": 66,
+          "side": "L",
+          "x": 5,
+          "y": 6,
+          "label": "L:x^5y^6"
+        },
+        {
+          "index": 75,
+          "side": "L",
+          "x": 6,
+          "y": 3,
+          "label": "L:x^6y^3"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 85,
+          "side": "L",
+          "x": 7,
+          "y": 1,
+          "label": "L:x^7y"
+        },
+        {
+          "index": 89,
+          "side": "L",
+          "x": 7,
+          "y": 5,
+          "label": "L:x^7y^5"
+        },
+        {
+          "index": 97,
+          "side": "L",
+          "x": 8,
+          "y": 1,
+          "label": "L:x^8y"
+        },
+        {
+          "index": 152,
+          "side": "R",
+          "x": 0,
+          "y": 8,
+          "label": "R:y^8"
+        },
+        {
+          "index": 153,
+          "side": "R",
+          "x": 0,
+          "y": 9,
+          "label": "R:y^9"
+        },
+        {
+          "index": 169,
+          "side": "R",
+          "x": 2,
+          "y": 1,
+          "label": "R:x^2y"
+        },
+        {
+          "index": 187,
+          "side": "R",
+          "x": 3,
+          "y": 7,
+          "label": "R:x^3y^7"
+        },
+        {
+          "index": 194,
+          "side": "R",
+          "x": 4,
+          "y": 2,
+          "label": "R:x^4y^2"
+        },
+        {
+          "index": 210,
+          "side": "R",
+          "x": 5,
+          "y": 6,
+          "label": "R:x^5y^6"
+        },
+        {
+          "index": 218,
+          "side": "R",
+          "x": 6,
+          "y": 2,
+          "label": "R:x^6y^2"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 232,
+          "side": "R",
+          "x": 7,
+          "y": 4,
+          "label": "R:x^7y^4"
+        },
+        {
+          "index": 266,
+          "side": "R",
+          "x": 10,
+          "y": 2,
+          "label": "R:x^10y^2"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 21,
+          "side": "L",
+          "x": 1,
+          "y": 9,
+          "label": "L:xy^9"
+        },
+        {
+          "index": 55,
+          "side": "L",
+          "x": 4,
+          "y": 7,
+          "label": "L:x^4y^7"
+        },
+        {
+          "index": 56,
+          "side": "L",
+          "x": 4,
+          "y": 8,
+          "label": "L:x^4y^8"
+        },
+        {
+          "index": 59,
+          "side": "L",
+          "x": 4,
+          "y": 11,
+          "label": "L:x^4y^11"
+        },
+        {
+          "index": 91,
+          "side": "L",
+          "x": 7,
+          "y": 7,
+          "label": "L:x^7y^7"
+        },
+        {
+          "index": 92,
+          "side": "L",
+          "x": 7,
+          "y": 8,
+          "label": "L:x^7y^8"
+        },
+        {
+          "index": 93,
+          "side": "L",
+          "x": 7,
+          "y": 9,
+          "label": "L:x^7y^9"
+        },
+        {
+          "index": 94,
+          "side": "L",
+          "x": 7,
+          "y": 10,
+          "label": "L:x^7y^10"
+        },
+        {
+          "index": 95,
+          "side": "L",
+          "x": 7,
+          "y": 11,
+          "label": "L:x^7y^11"
+        },
+        {
+          "index": 130,
+          "side": "L",
+          "x": 10,
+          "y": 10,
+          "label": "L:x^10y^10"
+        },
+        {
+          "index": 144,
+          "side": "R",
+          "x": 0,
+          "y": 0,
+          "label": "R:1"
+        },
+        {
+          "index": 156,
+          "side": "R",
+          "x": 1,
+          "y": 0,
+          "label": "R:x"
+        },
+        {
+          "index": 171,
+          "side": "R",
+          "x": 2,
+          "y": 3,
+          "label": "R:x^2y^3"
+        },
+        {
+          "index": 198,
+          "side": "R",
+          "x": 4,
+          "y": 6,
+          "label": "R:x^4y^6"
+        },
+        {
+          "index": 204,
+          "side": "R",
+          "x": 5,
+          "y": 0,
+          "label": "R:x^5"
+        },
+        {
+          "index": 213,
+          "side": "R",
+          "x": 5,
+          "y": 9,
+          "label": "R:x^5y^9"
+        },
+        {
+          "index": 216,
+          "side": "R",
+          "x": 6,
+          "y": 0,
+          "label": "R:x^6"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 246,
+          "side": "R",
+          "x": 8,
+          "y": 6,
+          "label": "R:x^8y^6"
+        },
+        {
+          "index": 273,
+          "side": "R",
+          "x": 10,
+          "y": 9,
+          "label": "R:x^10y^9"
+        }
+      ]
+    },
+    {
+      "logical": "q5",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: x^4y^9 + x^4y^11 + x^5 + x^6 + x^8y^4 + x^9y + x^9y^8 + x^10y^3 + x^10y^11 + x^11y^11 | R: x + x^3y^6 + x^3y^7 + x^5y^11 + x^6y^5 + x^7 + x^8y^4 + x^9 + x^10y + x^10y^2",
+      "Z_polynomial": "L: y^8 + x^3y^6 + x^3y^7 + x^3y^10 + x^6y^6 + x^6y^7 + x^6y^8 + x^6y^9 + x^6y^10 + x^9y^9 | R: y^11 + xy^2 + x^3y^5 + x^4y^8 + x^4y^11 + x^5y^11 + x^6y^2 + x^7y^5 + x^9y^8 + x^11y^11",
+      "X_support": [
+        {
+          "index": 57,
+          "side": "L",
+          "x": 4,
+          "y": 9,
+          "label": "L:x^4y^9"
+        },
+        {
+          "index": 59,
+          "side": "L",
+          "x": 4,
+          "y": 11,
+          "label": "L:x^4y^11"
+        },
+        {
+          "index": 60,
+          "side": "L",
+          "x": 5,
+          "y": 0,
+          "label": "L:x^5"
+        },
+        {
+          "index": 72,
+          "side": "L",
+          "x": 6,
+          "y": 0,
+          "label": "L:x^6"
+        },
+        {
+          "index": 100,
+          "side": "L",
+          "x": 8,
+          "y": 4,
+          "label": "L:x^8y^4"
+        },
+        {
+          "index": 109,
+          "side": "L",
+          "x": 9,
+          "y": 1,
+          "label": "L:x^9y"
+        },
+        {
+          "index": 116,
+          "side": "L",
+          "x": 9,
+          "y": 8,
+          "label": "L:x^9y^8"
+        },
+        {
+          "index": 123,
+          "side": "L",
+          "x": 10,
+          "y": 3,
+          "label": "L:x^10y^3"
+        },
+        {
+          "index": 131,
+          "side": "L",
+          "x": 10,
+          "y": 11,
+          "label": "L:x^10y^11"
+        },
+        {
+          "index": 143,
+          "side": "L",
+          "x": 11,
+          "y": 11,
+          "label": "L:x^11y^11"
+        },
+        {
+          "index": 156,
+          "side": "R",
+          "x": 1,
+          "y": 0,
+          "label": "R:x"
+        },
+        {
+          "index": 186,
+          "side": "R",
+          "x": 3,
+          "y": 6,
+          "label": "R:x^3y^6"
+        },
+        {
+          "index": 187,
+          "side": "R",
+          "x": 3,
+          "y": 7,
+          "label": "R:x^3y^7"
+        },
+        {
+          "index": 215,
+          "side": "R",
+          "x": 5,
+          "y": 11,
+          "label": "R:x^5y^11"
+        },
+        {
+          "index": 221,
+          "side": "R",
+          "x": 6,
+          "y": 5,
+          "label": "R:x^6y^5"
+        },
+        {
+          "index": 228,
+          "side": "R",
+          "x": 7,
+          "y": 0,
+          "label": "R:x^7"
+        },
+        {
+          "index": 244,
+          "side": "R",
+          "x": 8,
+          "y": 4,
+          "label": "R:x^8y^4"
+        },
+        {
+          "index": 252,
+          "side": "R",
+          "x": 9,
+          "y": 0,
+          "label": "R:x^9"
+        },
+        {
+          "index": 265,
+          "side": "R",
+          "x": 10,
+          "y": 1,
+          "label": "R:x^10y"
+        },
+        {
+          "index": 266,
+          "side": "R",
+          "x": 10,
+          "y": 2,
+          "label": "R:x^10y^2"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 8,
+          "side": "L",
+          "x": 0,
+          "y": 8,
+          "label": "L:y^8"
+        },
+        {
+          "index": 42,
+          "side": "L",
+          "x": 3,
+          "y": 6,
+          "label": "L:x^3y^6"
+        },
+        {
+          "index": 43,
+          "side": "L",
+          "x": 3,
+          "y": 7,
+          "label": "L:x^3y^7"
+        },
+        {
+          "index": 46,
+          "side": "L",
+          "x": 3,
+          "y": 10,
+          "label": "L:x^3y^10"
+        },
+        {
+          "index": 78,
+          "side": "L",
+          "x": 6,
+          "y": 6,
+          "label": "L:x^6y^6"
+        },
+        {
+          "index": 79,
+          "side": "L",
+          "x": 6,
+          "y": 7,
+          "label": "L:x^6y^7"
+        },
+        {
+          "index": 80,
+          "side": "L",
+          "x": 6,
+          "y": 8,
+          "label": "L:x^6y^8"
+        },
+        {
+          "index": 81,
+          "side": "L",
+          "x": 6,
+          "y": 9,
+          "label": "L:x^6y^9"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 117,
+          "side": "L",
+          "x": 9,
+          "y": 9,
+          "label": "L:x^9y^9"
+        },
+        {
+          "index": 155,
+          "side": "R",
+          "x": 0,
+          "y": 11,
+          "label": "R:y^11"
+        },
+        {
+          "index": 158,
+          "side": "R",
+          "x": 1,
+          "y": 2,
+          "label": "R:xy^2"
+        },
+        {
+          "index": 185,
+          "side": "R",
+          "x": 3,
+          "y": 5,
+          "label": "R:x^3y^5"
+        },
+        {
+          "index": 200,
+          "side": "R",
+          "x": 4,
+          "y": 8,
+          "label": "R:x^4y^8"
+        },
+        {
+          "index": 203,
+          "side": "R",
+          "x": 4,
+          "y": 11,
+          "label": "R:x^4y^11"
+        },
+        {
+          "index": 215,
+          "side": "R",
+          "x": 5,
+          "y": 11,
+          "label": "R:x^5y^11"
+        },
+        {
+          "index": 218,
+          "side": "R",
+          "x": 6,
+          "y": 2,
+          "label": "R:x^6y^2"
+        },
+        {
+          "index": 233,
+          "side": "R",
+          "x": 7,
+          "y": 5,
+          "label": "R:x^7y^5"
+        },
+        {
+          "index": 260,
+          "side": "R",
+          "x": 9,
+          "y": 8,
+          "label": "R:x^9y^8"
+        },
+        {
+          "index": 287,
+          "side": "R",
+          "x": 11,
+          "y": 11,
+          "label": "R:x^11y^11"
+        }
+      ]
+    },
+    {
+      "logical": "q6",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: xy^11 + x^2y^3 + x^2y^8 + x^3y^6 + x^3y^10 + x^4y^6 + x^9y^4 + x^9y^6 + x^10y^7 + x^11y^7 | R: y^7 + xy^11 + x^2y^7 + x^3y^8 + x^3y^9 + x^6y^7 + x^8y + x^8y^2 + x^10y^6 + x^11",
+      "Z_polynomial": "L: x^2 + x^2y^8 + x^2y^9 + x^5 + x^5y^8 + x^5y^9 + x^5y^10 + x^5y^11 + x^8y^11 + x^11y^10 | R: y^4 + x^2y^7 + x^3y + x^3y^10 + x^4y + x^5y^4 + x^6y^7 + x^8y^10 + x^10y + x^11y",
+      "X_support": [
+        {
+          "index": 23,
+          "side": "L",
+          "x": 1,
+          "y": 11,
+          "label": "L:xy^11"
+        },
+        {
+          "index": 27,
+          "side": "L",
+          "x": 2,
+          "y": 3,
+          "label": "L:x^2y^3"
+        },
+        {
+          "index": 32,
+          "side": "L",
+          "x": 2,
+          "y": 8,
+          "label": "L:x^2y^8"
+        },
+        {
+          "index": 42,
+          "side": "L",
+          "x": 3,
+          "y": 6,
+          "label": "L:x^3y^6"
+        },
+        {
+          "index": 46,
+          "side": "L",
+          "x": 3,
+          "y": 10,
+          "label": "L:x^3y^10"
+        },
+        {
+          "index": 54,
+          "side": "L",
+          "x": 4,
+          "y": 6,
+          "label": "L:x^4y^6"
+        },
+        {
+          "index": 112,
+          "side": "L",
+          "x": 9,
+          "y": 4,
+          "label": "L:x^9y^4"
+        },
+        {
+          "index": 114,
+          "side": "L",
+          "x": 9,
+          "y": 6,
+          "label": "L:x^9y^6"
+        },
+        {
+          "index": 127,
+          "side": "L",
+          "x": 10,
+          "y": 7,
+          "label": "L:x^10y^7"
+        },
+        {
+          "index": 139,
+          "side": "L",
+          "x": 11,
+          "y": 7,
+          "label": "L:x^11y^7"
+        },
+        {
+          "index": 151,
+          "side": "R",
+          "x": 0,
+          "y": 7,
+          "label": "R:y^7"
+        },
+        {
+          "index": 167,
+          "side": "R",
+          "x": 1,
+          "y": 11,
+          "label": "R:xy^11"
+        },
+        {
+          "index": 175,
+          "side": "R",
+          "x": 2,
+          "y": 7,
+          "label": "R:x^2y^7"
+        },
+        {
+          "index": 188,
+          "side": "R",
+          "x": 3,
+          "y": 8,
+          "label": "R:x^3y^8"
+        },
+        {
+          "index": 189,
+          "side": "R",
+          "x": 3,
+          "y": 9,
+          "label": "R:x^3y^9"
+        },
+        {
+          "index": 223,
+          "side": "R",
+          "x": 6,
+          "y": 7,
+          "label": "R:x^6y^7"
+        },
+        {
+          "index": 241,
+          "side": "R",
+          "x": 8,
+          "y": 1,
+          "label": "R:x^8y"
+        },
+        {
+          "index": 242,
+          "side": "R",
+          "x": 8,
+          "y": 2,
+          "label": "R:x^8y^2"
+        },
+        {
+          "index": 270,
+          "side": "R",
+          "x": 10,
+          "y": 6,
+          "label": "R:x^10y^6"
+        },
+        {
+          "index": 276,
+          "side": "R",
+          "x": 11,
+          "y": 0,
+          "label": "R:x^11"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 24,
+          "side": "L",
+          "x": 2,
+          "y": 0,
+          "label": "L:x^2"
+        },
+        {
+          "index": 32,
+          "side": "L",
+          "x": 2,
+          "y": 8,
+          "label": "L:x^2y^8"
+        },
+        {
+          "index": 33,
+          "side": "L",
+          "x": 2,
+          "y": 9,
+          "label": "L:x^2y^9"
+        },
+        {
+          "index": 60,
+          "side": "L",
+          "x": 5,
+          "y": 0,
+          "label": "L:x^5"
+        },
+        {
+          "index": 68,
+          "side": "L",
+          "x": 5,
+          "y": 8,
+          "label": "L:x^5y^8"
+        },
+        {
+          "index": 69,
+          "side": "L",
+          "x": 5,
+          "y": 9,
+          "label": "L:x^5y^9"
+        },
+        {
+          "index": 70,
+          "side": "L",
+          "x": 5,
+          "y": 10,
+          "label": "L:x^5y^10"
+        },
+        {
+          "index": 71,
+          "side": "L",
+          "x": 5,
+          "y": 11,
+          "label": "L:x^5y^11"
+        },
+        {
+          "index": 107,
+          "side": "L",
+          "x": 8,
+          "y": 11,
+          "label": "L:x^8y^11"
+        },
+        {
+          "index": 142,
+          "side": "L",
+          "x": 11,
+          "y": 10,
+          "label": "L:x^11y^10"
+        },
+        {
+          "index": 148,
+          "side": "R",
+          "x": 0,
+          "y": 4,
+          "label": "R:y^4"
+        },
+        {
+          "index": 175,
+          "side": "R",
+          "x": 2,
+          "y": 7,
+          "label": "R:x^2y^7"
+        },
+        {
+          "index": 181,
+          "side": "R",
+          "x": 3,
+          "y": 1,
+          "label": "R:x^3y"
+        },
+        {
+          "index": 190,
+          "side": "R",
+          "x": 3,
+          "y": 10,
+          "label": "R:x^3y^10"
+        },
+        {
+          "index": 193,
+          "side": "R",
+          "x": 4,
+          "y": 1,
+          "label": "R:x^4y"
+        },
+        {
+          "index": 208,
+          "side": "R",
+          "x": 5,
+          "y": 4,
+          "label": "R:x^5y^4"
+        },
+        {
+          "index": 223,
+          "side": "R",
+          "x": 6,
+          "y": 7,
+          "label": "R:x^6y^7"
+        },
+        {
+          "index": 250,
+          "side": "R",
+          "x": 8,
+          "y": 10,
+          "label": "R:x^8y^10"
+        },
+        {
+          "index": 265,
+          "side": "R",
+          "x": 10,
+          "y": 1,
+          "label": "R:x^10y"
+        },
+        {
+          "index": 277,
+          "side": "R",
+          "x": 11,
+          "y": 1,
+          "label": "R:x^11y"
+        }
+      ]
+    },
+    {
+      "logical": "q7",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: y^5 + xy^5 + xy^8 + x^2y^11 + x^4y^2 + x^5y^5 + x^6y^5 + x^8y^8 + x^10y^11 + x^11y^2 | R: x^2y^6 + x^2y^9 + x^2y^10 + x^5y^8 + x^8y^7 + x^11y^6 + x^11y^7 + x^11y^8 + x^11y^9 + x^11y^10",
+      "Z_polynomial": "L: y^3 + y^4 + x^2y^10 + x^5y^8 + x^5y^9 + x^6y^10 + x^7y^6 + x^8y^10 + x^9y^5 + x^10y^11 | R: x^4y^11 + x^5y^7 + x^5y^11 + x^6y^2 + x^6y^9 + x^7y^6 + x^9y^10 + x^10y^10 + x^11y + x^11y^11",
+      "X_support": [
+        {
+          "index": 5,
+          "side": "L",
+          "x": 0,
+          "y": 5,
+          "label": "L:y^5"
+        },
+        {
+          "index": 17,
+          "side": "L",
+          "x": 1,
+          "y": 5,
+          "label": "L:xy^5"
+        },
+        {
+          "index": 20,
+          "side": "L",
+          "x": 1,
+          "y": 8,
+          "label": "L:xy^8"
+        },
+        {
+          "index": 35,
+          "side": "L",
+          "x": 2,
+          "y": 11,
+          "label": "L:x^2y^11"
+        },
+        {
+          "index": 50,
+          "side": "L",
+          "x": 4,
+          "y": 2,
+          "label": "L:x^4y^2"
+        },
+        {
+          "index": 65,
+          "side": "L",
+          "x": 5,
+          "y": 5,
+          "label": "L:x^5y^5"
+        },
+        {
+          "index": 77,
+          "side": "L",
+          "x": 6,
+          "y": 5,
+          "label": "L:x^6y^5"
+        },
+        {
+          "index": 104,
+          "side": "L",
+          "x": 8,
+          "y": 8,
+          "label": "L:x^8y^8"
+        },
+        {
+          "index": 131,
+          "side": "L",
+          "x": 10,
+          "y": 11,
+          "label": "L:x^10y^11"
+        },
+        {
+          "index": 134,
+          "side": "L",
+          "x": 11,
+          "y": 2,
+          "label": "L:x^11y^2"
+        },
+        {
+          "index": 174,
+          "side": "R",
+          "x": 2,
+          "y": 6,
+          "label": "R:x^2y^6"
+        },
+        {
+          "index": 177,
+          "side": "R",
+          "x": 2,
+          "y": 9,
+          "label": "R:x^2y^9"
+        },
+        {
+          "index": 178,
+          "side": "R",
+          "x": 2,
+          "y": 10,
+          "label": "R:x^2y^10"
+        },
+        {
+          "index": 212,
+          "side": "R",
+          "x": 5,
+          "y": 8,
+          "label": "R:x^5y^8"
+        },
+        {
+          "index": 247,
+          "side": "R",
+          "x": 8,
+          "y": 7,
+          "label": "R:x^8y^7"
+        },
+        {
+          "index": 282,
+          "side": "R",
+          "x": 11,
+          "y": 6,
+          "label": "R:x^11y^6"
+        },
+        {
+          "index": 283,
+          "side": "R",
+          "x": 11,
+          "y": 7,
+          "label": "R:x^11y^7"
+        },
+        {
+          "index": 284,
+          "side": "R",
+          "x": 11,
+          "y": 8,
+          "label": "R:x^11y^8"
+        },
+        {
+          "index": 285,
+          "side": "R",
+          "x": 11,
+          "y": 9,
+          "label": "R:x^11y^9"
+        },
+        {
+          "index": 286,
+          "side": "R",
+          "x": 11,
+          "y": 10,
+          "label": "R:x^11y^10"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 3,
+          "side": "L",
+          "x": 0,
+          "y": 3,
+          "label": "L:y^3"
+        },
+        {
+          "index": 4,
+          "side": "L",
+          "x": 0,
+          "y": 4,
+          "label": "L:y^4"
+        },
+        {
+          "index": 34,
+          "side": "L",
+          "x": 2,
+          "y": 10,
+          "label": "L:x^2y^10"
+        },
+        {
+          "index": 68,
+          "side": "L",
+          "x": 5,
+          "y": 8,
+          "label": "L:x^5y^8"
+        },
+        {
+          "index": 69,
+          "side": "L",
+          "x": 5,
+          "y": 9,
+          "label": "L:x^5y^9"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 90,
+          "side": "L",
+          "x": 7,
+          "y": 6,
+          "label": "L:x^7y^6"
+        },
+        {
+          "index": 106,
+          "side": "L",
+          "x": 8,
+          "y": 10,
+          "label": "L:x^8y^10"
+        },
+        {
+          "index": 113,
+          "side": "L",
+          "x": 9,
+          "y": 5,
+          "label": "L:x^9y^5"
+        },
+        {
+          "index": 131,
+          "side": "L",
+          "x": 10,
+          "y": 11,
+          "label": "L:x^10y^11"
+        },
+        {
+          "index": 203,
+          "side": "R",
+          "x": 4,
+          "y": 11,
+          "label": "R:x^4y^11"
+        },
+        {
+          "index": 211,
+          "side": "R",
+          "x": 5,
+          "y": 7,
+          "label": "R:x^5y^7"
+        },
+        {
+          "index": 215,
+          "side": "R",
+          "x": 5,
+          "y": 11,
+          "label": "R:x^5y^11"
+        },
+        {
+          "index": 218,
+          "side": "R",
+          "x": 6,
+          "y": 2,
+          "label": "R:x^6y^2"
+        },
+        {
+          "index": 225,
+          "side": "R",
+          "x": 6,
+          "y": 9,
+          "label": "R:x^6y^9"
+        },
+        {
+          "index": 234,
+          "side": "R",
+          "x": 7,
+          "y": 6,
+          "label": "R:x^7y^6"
+        },
+        {
+          "index": 262,
+          "side": "R",
+          "x": 9,
+          "y": 10,
+          "label": "R:x^9y^10"
+        },
+        {
+          "index": 274,
+          "side": "R",
+          "x": 10,
+          "y": 10,
+          "label": "R:x^10y^10"
+        },
+        {
+          "index": 277,
+          "side": "R",
+          "x": 11,
+          "y": 1,
+          "label": "R:x^11y"
+        },
+        {
+          "index": 287,
+          "side": "R",
+          "x": 11,
+          "y": 11,
+          "label": "R:x^11y^11"
+        }
+      ]
+    },
+    {
+      "logical": "q8",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: y^4 + y^7 + xy^10 + x^3y + x^4y^4 + x^5y^4 + x^7y^7 + x^9y^10 + x^10y + x^11y^4 | R: xy^5 + xy^8 + xy^9 + x^4y^7 + x^7y^6 + x^10y^5 + x^10y^6 + x^10y^7 + x^10y^8 + x^10y^9",
+      "Z_polynomial": "L: 1 + y + x^2y^7 + x^5y^5 + x^5y^6 + x^6y^7 + x^7y^3 + x^8y^7 + x^9y^2 + x^10y^8 | R: x^4y^8 + x^5y^4 + x^5y^8 + x^6y^6 + x^6y^11 + x^7y^3 + x^9y^7 + x^10y^7 + x^11y^8 + x^11y^10",
+      "X_support": [
+        {
+          "index": 4,
+          "side": "L",
+          "x": 0,
+          "y": 4,
+          "label": "L:y^4"
+        },
+        {
+          "index": 7,
+          "side": "L",
+          "x": 0,
+          "y": 7,
+          "label": "L:y^7"
+        },
+        {
+          "index": 22,
+          "side": "L",
+          "x": 1,
+          "y": 10,
+          "label": "L:xy^10"
+        },
+        {
+          "index": 37,
+          "side": "L",
+          "x": 3,
+          "y": 1,
+          "label": "L:x^3y"
+        },
+        {
+          "index": 52,
+          "side": "L",
+          "x": 4,
+          "y": 4,
+          "label": "L:x^4y^4"
+        },
+        {
+          "index": 64,
+          "side": "L",
+          "x": 5,
+          "y": 4,
+          "label": "L:x^5y^4"
+        },
+        {
+          "index": 91,
+          "side": "L",
+          "x": 7,
+          "y": 7,
+          "label": "L:x^7y^7"
+        },
+        {
+          "index": 118,
+          "side": "L",
+          "x": 9,
+          "y": 10,
+          "label": "L:x^9y^10"
+        },
+        {
+          "index": 121,
+          "side": "L",
+          "x": 10,
+          "y": 1,
+          "label": "L:x^10y"
+        },
+        {
+          "index": 136,
+          "side": "L",
+          "x": 11,
+          "y": 4,
+          "label": "L:x^11y^4"
+        },
+        {
+          "index": 161,
+          "side": "R",
+          "x": 1,
+          "y": 5,
+          "label": "R:xy^5"
+        },
+        {
+          "index": 164,
+          "side": "R",
+          "x": 1,
+          "y": 8,
+          "label": "R:xy^8"
+        },
+        {
+          "index": 165,
+          "side": "R",
+          "x": 1,
+          "y": 9,
+          "label": "R:xy^9"
+        },
+        {
+          "index": 199,
+          "side": "R",
+          "x": 4,
+          "y": 7,
+          "label": "R:x^4y^7"
+        },
+        {
+          "index": 234,
+          "side": "R",
+          "x": 7,
+          "y": 6,
+          "label": "R:x^7y^6"
+        },
+        {
+          "index": 269,
+          "side": "R",
+          "x": 10,
+          "y": 5,
+          "label": "R:x^10y^5"
+        },
+        {
+          "index": 270,
+          "side": "R",
+          "x": 10,
+          "y": 6,
+          "label": "R:x^10y^6"
+        },
+        {
+          "index": 271,
+          "side": "R",
+          "x": 10,
+          "y": 7,
+          "label": "R:x^10y^7"
+        },
+        {
+          "index": 272,
+          "side": "R",
+          "x": 10,
+          "y": 8,
+          "label": "R:x^10y^8"
+        },
+        {
+          "index": 273,
+          "side": "R",
+          "x": 10,
+          "y": 9,
+          "label": "R:x^10y^9"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 0,
+          "side": "L",
+          "x": 0,
+          "y": 0,
+          "label": "L:1"
+        },
+        {
+          "index": 1,
+          "side": "L",
+          "x": 0,
+          "y": 1,
+          "label": "L:y"
+        },
+        {
+          "index": 31,
+          "side": "L",
+          "x": 2,
+          "y": 7,
+          "label": "L:x^2y^7"
+        },
+        {
+          "index": 65,
+          "side": "L",
+          "x": 5,
+          "y": 5,
+          "label": "L:x^5y^5"
+        },
+        {
+          "index": 66,
+          "side": "L",
+          "x": 5,
+          "y": 6,
+          "label": "L:x^5y^6"
+        },
+        {
+          "index": 79,
+          "side": "L",
+          "x": 6,
+          "y": 7,
+          "label": "L:x^6y^7"
+        },
+        {
+          "index": 87,
+          "side": "L",
+          "x": 7,
+          "y": 3,
+          "label": "L:x^7y^3"
+        },
+        {
+          "index": 103,
+          "side": "L",
+          "x": 8,
+          "y": 7,
+          "label": "L:x^8y^7"
+        },
+        {
+          "index": 110,
+          "side": "L",
+          "x": 9,
+          "y": 2,
+          "label": "L:x^9y^2"
+        },
+        {
+          "index": 128,
+          "side": "L",
+          "x": 10,
+          "y": 8,
+          "label": "L:x^10y^8"
+        },
+        {
+          "index": 200,
+          "side": "R",
+          "x": 4,
+          "y": 8,
+          "label": "R:x^4y^8"
+        },
+        {
+          "index": 208,
+          "side": "R",
+          "x": 5,
+          "y": 4,
+          "label": "R:x^5y^4"
+        },
+        {
+          "index": 212,
+          "side": "R",
+          "x": 5,
+          "y": 8,
+          "label": "R:x^5y^8"
+        },
+        {
+          "index": 222,
+          "side": "R",
+          "x": 6,
+          "y": 6,
+          "label": "R:x^6y^6"
+        },
+        {
+          "index": 227,
+          "side": "R",
+          "x": 6,
+          "y": 11,
+          "label": "R:x^6y^11"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 259,
+          "side": "R",
+          "x": 9,
+          "y": 7,
+          "label": "R:x^9y^7"
+        },
+        {
+          "index": 271,
+          "side": "R",
+          "x": 10,
+          "y": 7,
+          "label": "R:x^10y^7"
+        },
+        {
+          "index": 284,
+          "side": "R",
+          "x": 11,
+          "y": 8,
+          "label": "R:x^11y^8"
+        },
+        {
+          "index": 286,
+          "side": "R",
+          "x": 11,
+          "y": 10,
+          "label": "R:x^11y^10"
+        }
+      ]
+    },
+    {
+      "logical": "q9",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: y^2 + xy^5 + x^2y^5 + x^4y^8 + x^6y^11 + x^7y^2 + x^8y^5 + x^9y^5 + x^9y^8 + x^10y^11 | R: xy^8 + x^4y^7 + x^7y^6 + x^7y^7 + x^7y^8 + x^7y^9 + x^7y^10 + x^10y^6 + x^10y^9 + x^10y^10",
+      "Z_polynomial": "L: x^2y + x^2y^2 + x^3y^3 + x^4y^11 + x^5y^3 + x^6y^10 + x^7y^4 + x^9y^8 + x^9y^9 + x^11y^3 | R: xy^4 + x^2 + x^2y^4 + x^3y^2 + x^3y^7 + x^4y^11 + x^6y^3 + x^7y^3 + x^8y^4 + x^8y^6",
+      "X_support": [
+        {
+          "index": 2,
+          "side": "L",
+          "x": 0,
+          "y": 2,
+          "label": "L:y^2"
+        },
+        {
+          "index": 17,
+          "side": "L",
+          "x": 1,
+          "y": 5,
+          "label": "L:xy^5"
+        },
+        {
+          "index": 29,
+          "side": "L",
+          "x": 2,
+          "y": 5,
+          "label": "L:x^2y^5"
+        },
+        {
+          "index": 56,
+          "side": "L",
+          "x": 4,
+          "y": 8,
+          "label": "L:x^4y^8"
+        },
+        {
+          "index": 83,
+          "side": "L",
+          "x": 6,
+          "y": 11,
+          "label": "L:x^6y^11"
+        },
+        {
+          "index": 86,
+          "side": "L",
+          "x": 7,
+          "y": 2,
+          "label": "L:x^7y^2"
+        },
+        {
+          "index": 101,
+          "side": "L",
+          "x": 8,
+          "y": 5,
+          "label": "L:x^8y^5"
+        },
+        {
+          "index": 113,
+          "side": "L",
+          "x": 9,
+          "y": 5,
+          "label": "L:x^9y^5"
+        },
+        {
+          "index": 116,
+          "side": "L",
+          "x": 9,
+          "y": 8,
+          "label": "L:x^9y^8"
+        },
+        {
+          "index": 131,
+          "side": "L",
+          "x": 10,
+          "y": 11,
+          "label": "L:x^10y^11"
+        },
+        {
+          "index": 164,
+          "side": "R",
+          "x": 1,
+          "y": 8,
+          "label": "R:xy^8"
+        },
+        {
+          "index": 199,
+          "side": "R",
+          "x": 4,
+          "y": 7,
+          "label": "R:x^4y^7"
+        },
+        {
+          "index": 234,
+          "side": "R",
+          "x": 7,
+          "y": 6,
+          "label": "R:x^7y^6"
+        },
+        {
+          "index": 235,
+          "side": "R",
+          "x": 7,
+          "y": 7,
+          "label": "R:x^7y^7"
+        },
+        {
+          "index": 236,
+          "side": "R",
+          "x": 7,
+          "y": 8,
+          "label": "R:x^7y^8"
+        },
+        {
+          "index": 237,
+          "side": "R",
+          "x": 7,
+          "y": 9,
+          "label": "R:x^7y^9"
+        },
+        {
+          "index": 238,
+          "side": "R",
+          "x": 7,
+          "y": 10,
+          "label": "R:x^7y^10"
+        },
+        {
+          "index": 270,
+          "side": "R",
+          "x": 10,
+          "y": 6,
+          "label": "R:x^10y^6"
+        },
+        {
+          "index": 273,
+          "side": "R",
+          "x": 10,
+          "y": 9,
+          "label": "R:x^10y^9"
+        },
+        {
+          "index": 274,
+          "side": "R",
+          "x": 10,
+          "y": 10,
+          "label": "R:x^10y^10"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 25,
+          "side": "L",
+          "x": 2,
+          "y": 1,
+          "label": "L:x^2y"
+        },
+        {
+          "index": 26,
+          "side": "L",
+          "x": 2,
+          "y": 2,
+          "label": "L:x^2y^2"
+        },
+        {
+          "index": 39,
+          "side": "L",
+          "x": 3,
+          "y": 3,
+          "label": "L:x^3y^3"
+        },
+        {
+          "index": 59,
+          "side": "L",
+          "x": 4,
+          "y": 11,
+          "label": "L:x^4y^11"
+        },
+        {
+          "index": 63,
+          "side": "L",
+          "x": 5,
+          "y": 3,
+          "label": "L:x^5y^3"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 88,
+          "side": "L",
+          "x": 7,
+          "y": 4,
+          "label": "L:x^7y^4"
+        },
+        {
+          "index": 116,
+          "side": "L",
+          "x": 9,
+          "y": 8,
+          "label": "L:x^9y^8"
+        },
+        {
+          "index": 117,
+          "side": "L",
+          "x": 9,
+          "y": 9,
+          "label": "L:x^9y^9"
+        },
+        {
+          "index": 135,
+          "side": "L",
+          "x": 11,
+          "y": 3,
+          "label": "L:x^11y^3"
+        },
+        {
+          "index": 160,
+          "side": "R",
+          "x": 1,
+          "y": 4,
+          "label": "R:xy^4"
+        },
+        {
+          "index": 168,
+          "side": "R",
+          "x": 2,
+          "y": 0,
+          "label": "R:x^2"
+        },
+        {
+          "index": 172,
+          "side": "R",
+          "x": 2,
+          "y": 4,
+          "label": "R:x^2y^4"
+        },
+        {
+          "index": 182,
+          "side": "R",
+          "x": 3,
+          "y": 2,
+          "label": "R:x^3y^2"
+        },
+        {
+          "index": 187,
+          "side": "R",
+          "x": 3,
+          "y": 7,
+          "label": "R:x^3y^7"
+        },
+        {
+          "index": 203,
+          "side": "R",
+          "x": 4,
+          "y": 11,
+          "label": "R:x^4y^11"
+        },
+        {
+          "index": 219,
+          "side": "R",
+          "x": 6,
+          "y": 3,
+          "label": "R:x^6y^3"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 244,
+          "side": "R",
+          "x": 8,
+          "y": 4,
+          "label": "R:x^8y^4"
+        },
+        {
+          "index": 246,
+          "side": "R",
+          "x": 8,
+          "y": 6,
+          "label": "R:x^8y^6"
+        }
+      ]
+    },
+    {
+      "logical": "q10",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: y + xy + x^3y^4 + x^5y^7 + x^6y^10 + x^7y + x^8y + x^8y^4 + x^9y^7 + x^11y^10 | R: y^4 + x^3y^3 + x^6y^2 + x^6y^3 + x^6y^4 + x^6y^5 + x^6y^6 + x^9y^2 + x^9y^5 + x^9y^6",
+      "Z_polynomial": "L: xy^4 + xy^5 + x^3y^11 + x^6y^9 + x^6y^10 + x^7y^11 + x^8y^7 + x^9y^11 + x^10y^6 + x^11 | R: 1 + y^2 + x^5 + x^6 + x^6y^8 + x^7y^3 + x^7y^10 + x^8y^7 + x^10y^11 + x^11y^11",
+      "X_support": [
+        {
+          "index": 1,
+          "side": "L",
+          "x": 0,
+          "y": 1,
+          "label": "L:y"
+        },
+        {
+          "index": 13,
+          "side": "L",
+          "x": 1,
+          "y": 1,
+          "label": "L:xy"
+        },
+        {
+          "index": 40,
+          "side": "L",
+          "x": 3,
+          "y": 4,
+          "label": "L:x^3y^4"
+        },
+        {
+          "index": 67,
+          "side": "L",
+          "x": 5,
+          "y": 7,
+          "label": "L:x^5y^7"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 85,
+          "side": "L",
+          "x": 7,
+          "y": 1,
+          "label": "L:x^7y"
+        },
+        {
+          "index": 97,
+          "side": "L",
+          "x": 8,
+          "y": 1,
+          "label": "L:x^8y"
+        },
+        {
+          "index": 100,
+          "side": "L",
+          "x": 8,
+          "y": 4,
+          "label": "L:x^8y^4"
+        },
+        {
+          "index": 115,
+          "side": "L",
+          "x": 9,
+          "y": 7,
+          "label": "L:x^9y^7"
+        },
+        {
+          "index": 142,
+          "side": "L",
+          "x": 11,
+          "y": 10,
+          "label": "L:x^11y^10"
+        },
+        {
+          "index": 148,
+          "side": "R",
+          "x": 0,
+          "y": 4,
+          "label": "R:y^4"
+        },
+        {
+          "index": 183,
+          "side": "R",
+          "x": 3,
+          "y": 3,
+          "label": "R:x^3y^3"
+        },
+        {
+          "index": 218,
+          "side": "R",
+          "x": 6,
+          "y": 2,
+          "label": "R:x^6y^2"
+        },
+        {
+          "index": 219,
+          "side": "R",
+          "x": 6,
+          "y": 3,
+          "label": "R:x^6y^3"
+        },
+        {
+          "index": 220,
+          "side": "R",
+          "x": 6,
+          "y": 4,
+          "label": "R:x^6y^4"
+        },
+        {
+          "index": 221,
+          "side": "R",
+          "x": 6,
+          "y": 5,
+          "label": "R:x^6y^5"
+        },
+        {
+          "index": 222,
+          "side": "R",
+          "x": 6,
+          "y": 6,
+          "label": "R:x^6y^6"
+        },
+        {
+          "index": 254,
+          "side": "R",
+          "x": 9,
+          "y": 2,
+          "label": "R:x^9y^2"
+        },
+        {
+          "index": 257,
+          "side": "R",
+          "x": 9,
+          "y": 5,
+          "label": "R:x^9y^5"
+        },
+        {
+          "index": 258,
+          "side": "R",
+          "x": 9,
+          "y": 6,
+          "label": "R:x^9y^6"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 16,
+          "side": "L",
+          "x": 1,
+          "y": 4,
+          "label": "L:xy^4"
+        },
+        {
+          "index": 17,
+          "side": "L",
+          "x": 1,
+          "y": 5,
+          "label": "L:xy^5"
+        },
+        {
+          "index": 47,
+          "side": "L",
+          "x": 3,
+          "y": 11,
+          "label": "L:x^3y^11"
+        },
+        {
+          "index": 81,
+          "side": "L",
+          "x": 6,
+          "y": 9,
+          "label": "L:x^6y^9"
+        },
+        {
+          "index": 82,
+          "side": "L",
+          "x": 6,
+          "y": 10,
+          "label": "L:x^6y^10"
+        },
+        {
+          "index": 95,
+          "side": "L",
+          "x": 7,
+          "y": 11,
+          "label": "L:x^7y^11"
+        },
+        {
+          "index": 103,
+          "side": "L",
+          "x": 8,
+          "y": 7,
+          "label": "L:x^8y^7"
+        },
+        {
+          "index": 119,
+          "side": "L",
+          "x": 9,
+          "y": 11,
+          "label": "L:x^9y^11"
+        },
+        {
+          "index": 126,
+          "side": "L",
+          "x": 10,
+          "y": 6,
+          "label": "L:x^10y^6"
+        },
+        {
+          "index": 132,
+          "side": "L",
+          "x": 11,
+          "y": 0,
+          "label": "L:x^11"
+        },
+        {
+          "index": 144,
+          "side": "R",
+          "x": 0,
+          "y": 0,
+          "label": "R:1"
+        },
+        {
+          "index": 146,
+          "side": "R",
+          "x": 0,
+          "y": 2,
+          "label": "R:y^2"
+        },
+        {
+          "index": 204,
+          "side": "R",
+          "x": 5,
+          "y": 0,
+          "label": "R:x^5"
+        },
+        {
+          "index": 216,
+          "side": "R",
+          "x": 6,
+          "y": 0,
+          "label": "R:x^6"
+        },
+        {
+          "index": 224,
+          "side": "R",
+          "x": 6,
+          "y": 8,
+          "label": "R:x^6y^8"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 238,
+          "side": "R",
+          "x": 7,
+          "y": 10,
+          "label": "R:x^7y^10"
+        },
+        {
+          "index": 247,
+          "side": "R",
+          "x": 8,
+          "y": 7,
+          "label": "R:x^8y^7"
+        },
+        {
+          "index": 275,
+          "side": "R",
+          "x": 10,
+          "y": 11,
+          "label": "R:x^10y^11"
+        },
+        {
+          "index": 287,
+          "side": "R",
+          "x": 11,
+          "y": 11,
+          "label": "R:x^11y^11"
+        }
+      ]
+    },
+    {
+      "logical": "q11",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: y^11 + xy^2 + x^2y^2 + x^4y^5 + x^6y^8 + x^7y^11 + x^8y^2 + x^9y^2 + x^9y^5 + x^10y^8 | R: xy^5 + x^4y^4 + x^7y^3 + x^7y^4 + x^7y^5 + x^7y^6 + x^7y^7 + x^10y^3 + x^10y^6 + x^10y^7",
+      "Z_polynomial": "L: y + x^3 + x^3y^11 + x^4y + x^5y^9 + x^6y + x^7y^8 + x^8y^2 + x^10y^6 + x^10y^7 | R: x^2y^2 + x^3y^2 + x^3y^10 + x^4 + x^4y^5 + x^5y^9 + x^7y + x^8y + x^9y^2 + x^9y^4",
+      "X_support": [
+        {
+          "index": 11,
+          "side": "L",
+          "x": 0,
+          "y": 11,
+          "label": "L:y^11"
+        },
+        {
+          "index": 14,
+          "side": "L",
+          "x": 1,
+          "y": 2,
+          "label": "L:xy^2"
+        },
+        {
+          "index": 26,
+          "side": "L",
+          "x": 2,
+          "y": 2,
+          "label": "L:x^2y^2"
+        },
+        {
+          "index": 53,
+          "side": "L",
+          "x": 4,
+          "y": 5,
+          "label": "L:x^4y^5"
+        },
+        {
+          "index": 80,
+          "side": "L",
+          "x": 6,
+          "y": 8,
+          "label": "L:x^6y^8"
+        },
+        {
+          "index": 95,
+          "side": "L",
+          "x": 7,
+          "y": 11,
+          "label": "L:x^7y^11"
+        },
+        {
+          "index": 98,
+          "side": "L",
+          "x": 8,
+          "y": 2,
+          "label": "L:x^8y^2"
+        },
+        {
+          "index": 110,
+          "side": "L",
+          "x": 9,
+          "y": 2,
+          "label": "L:x^9y^2"
+        },
+        {
+          "index": 113,
+          "side": "L",
+          "x": 9,
+          "y": 5,
+          "label": "L:x^9y^5"
+        },
+        {
+          "index": 128,
+          "side": "L",
+          "x": 10,
+          "y": 8,
+          "label": "L:x^10y^8"
+        },
+        {
+          "index": 161,
+          "side": "R",
+          "x": 1,
+          "y": 5,
+          "label": "R:xy^5"
+        },
+        {
+          "index": 196,
+          "side": "R",
+          "x": 4,
+          "y": 4,
+          "label": "R:x^4y^4"
+        },
+        {
+          "index": 231,
+          "side": "R",
+          "x": 7,
+          "y": 3,
+          "label": "R:x^7y^3"
+        },
+        {
+          "index": 232,
+          "side": "R",
+          "x": 7,
+          "y": 4,
+          "label": "R:x^7y^4"
+        },
+        {
+          "index": 233,
+          "side": "R",
+          "x": 7,
+          "y": 5,
+          "label": "R:x^7y^5"
+        },
+        {
+          "index": 234,
+          "side": "R",
+          "x": 7,
+          "y": 6,
+          "label": "R:x^7y^6"
+        },
+        {
+          "index": 235,
+          "side": "R",
+          "x": 7,
+          "y": 7,
+          "label": "R:x^7y^7"
+        },
+        {
+          "index": 267,
+          "side": "R",
+          "x": 10,
+          "y": 3,
+          "label": "R:x^10y^3"
+        },
+        {
+          "index": 270,
+          "side": "R",
+          "x": 10,
+          "y": 6,
+          "label": "R:x^10y^6"
+        },
+        {
+          "index": 271,
+          "side": "R",
+          "x": 10,
+          "y": 7,
+          "label": "R:x^10y^7"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 1,
+          "side": "L",
+          "x": 0,
+          "y": 1,
+          "label": "L:y"
+        },
+        {
+          "index": 36,
+          "side": "L",
+          "x": 3,
+          "y": 0,
+          "label": "L:x^3"
+        },
+        {
+          "index": 47,
+          "side": "L",
+          "x": 3,
+          "y": 11,
+          "label": "L:x^3y^11"
+        },
+        {
+          "index": 49,
+          "side": "L",
+          "x": 4,
+          "y": 1,
+          "label": "L:x^4y"
+        },
+        {
+          "index": 69,
+          "side": "L",
+          "x": 5,
+          "y": 9,
+          "label": "L:x^5y^9"
+        },
+        {
+          "index": 73,
+          "side": "L",
+          "x": 6,
+          "y": 1,
+          "label": "L:x^6y"
+        },
+        {
+          "index": 92,
+          "side": "L",
+          "x": 7,
+          "y": 8,
+          "label": "L:x^7y^8"
+        },
+        {
+          "index": 98,
+          "side": "L",
+          "x": 8,
+          "y": 2,
+          "label": "L:x^8y^2"
+        },
+        {
+          "index": 126,
+          "side": "L",
+          "x": 10,
+          "y": 6,
+          "label": "L:x^10y^6"
+        },
+        {
+          "index": 127,
+          "side": "L",
+          "x": 10,
+          "y": 7,
+          "label": "L:x^10y^7"
+        },
+        {
+          "index": 170,
+          "side": "R",
+          "x": 2,
+          "y": 2,
+          "label": "R:x^2y^2"
+        },
+        {
+          "index": 182,
+          "side": "R",
+          "x": 3,
+          "y": 2,
+          "label": "R:x^3y^2"
+        },
+        {
+          "index": 190,
+          "side": "R",
+          "x": 3,
+          "y": 10,
+          "label": "R:x^3y^10"
+        },
+        {
+          "index": 192,
+          "side": "R",
+          "x": 4,
+          "y": 0,
+          "label": "R:x^4"
+        },
+        {
+          "index": 197,
+          "side": "R",
+          "x": 4,
+          "y": 5,
+          "label": "R:x^4y^5"
+        },
+        {
+          "index": 213,
+          "side": "R",
+          "x": 5,
+          "y": 9,
+          "label": "R:x^5y^9"
+        },
+        {
+          "index": 229,
+          "side": "R",
+          "x": 7,
+          "y": 1,
+          "label": "R:x^7y"
+        },
+        {
+          "index": 241,
+          "side": "R",
+          "x": 8,
+          "y": 1,
+          "label": "R:x^8y"
+        },
+        {
+          "index": 254,
+          "side": "R",
+          "x": 9,
+          "y": 2,
+          "label": "R:x^9y^2"
+        },
+        {
+          "index": 256,
+          "side": "R",
+          "x": 9,
+          "y": 4,
+          "label": "R:x^9y^4"
+        }
+      ]
+    },
+    {
+      "logical": "q12",
+      "X_weight": 20,
+      "Z_weight": 20,
+      "X_polynomial": "L: xy^9 + x^2 + x^3 + x^5y^3 + x^7y^6 + x^8y^9 + x^9 + x^10 + x^10y^3 + x^11y^6 | R: x^2y^3 + x^5y^2 + x^8y + x^8y^2 + x^8y^3 + x^8y^4 + x^8y^5 + x^11y + x^11y^4 + x^11y^5",
+      "Z_polynomial": "L: y^2 + xy^6 + x^2y + x^3y^7 + x^5 + x^5y^11 + x^7y^6 + x^10y^4 + x^10y^5 + x^11y^6 | R: y^2 + x^2y^6 + x^3y^6 + x^4y^7 + x^4y^9 + x^9y^7 + x^10y^3 + x^10y^7 + x^11y^5 + x^11y^10",
+      "X_support": [
+        {
+          "index": 21,
+          "side": "L",
+          "x": 1,
+          "y": 9,
+          "label": "L:xy^9"
+        },
+        {
+          "index": 24,
+          "side": "L",
+          "x": 2,
+          "y": 0,
+          "label": "L:x^2"
+        },
+        {
+          "index": 36,
+          "side": "L",
+          "x": 3,
+          "y": 0,
+          "label": "L:x^3"
+        },
+        {
+          "index": 63,
+          "side": "L",
+          "x": 5,
+          "y": 3,
+          "label": "L:x^5y^3"
+        },
+        {
+          "index": 90,
+          "side": "L",
+          "x": 7,
+          "y": 6,
+          "label": "L:x^7y^6"
+        },
+        {
+          "index": 105,
+          "side": "L",
+          "x": 8,
+          "y": 9,
+          "label": "L:x^8y^9"
+        },
+        {
+          "index": 108,
+          "side": "L",
+          "x": 9,
+          "y": 0,
+          "label": "L:x^9"
+        },
+        {
+          "index": 120,
+          "side": "L",
+          "x": 10,
+          "y": 0,
+          "label": "L:x^10"
+        },
+        {
+          "index": 123,
+          "side": "L",
+          "x": 10,
+          "y": 3,
+          "label": "L:x^10y^3"
+        },
+        {
+          "index": 138,
+          "side": "L",
+          "x": 11,
+          "y": 6,
+          "label": "L:x^11y^6"
+        },
+        {
+          "index": 171,
+          "side": "R",
+          "x": 2,
+          "y": 3,
+          "label": "R:x^2y^3"
+        },
+        {
+          "index": 206,
+          "side": "R",
+          "x": 5,
+          "y": 2,
+          "label": "R:x^5y^2"
+        },
+        {
+          "index": 241,
+          "side": "R",
+          "x": 8,
+          "y": 1,
+          "label": "R:x^8y"
+        },
+        {
+          "index": 242,
+          "side": "R",
+          "x": 8,
+          "y": 2,
+          "label": "R:x^8y^2"
+        },
+        {
+          "index": 243,
+          "side": "R",
+          "x": 8,
+          "y": 3,
+          "label": "R:x^8y^3"
+        },
+        {
+          "index": 244,
+          "side": "R",
+          "x": 8,
+          "y": 4,
+          "label": "R:x^8y^4"
+        },
+        {
+          "index": 245,
+          "side": "R",
+          "x": 8,
+          "y": 5,
+          "label": "R:x^8y^5"
+        },
+        {
+          "index": 277,
+          "side": "R",
+          "x": 11,
+          "y": 1,
+          "label": "R:x^11y"
+        },
+        {
+          "index": 280,
+          "side": "R",
+          "x": 11,
+          "y": 4,
+          "label": "R:x^11y^4"
+        },
+        {
+          "index": 281,
+          "side": "R",
+          "x": 11,
+          "y": 5,
+          "label": "R:x^11y^5"
+        }
+      ],
+      "Z_support": [
+        {
+          "index": 2,
+          "side": "L",
+          "x": 0,
+          "y": 2,
+          "label": "L:y^2"
+        },
+        {
+          "index": 18,
+          "side": "L",
+          "x": 1,
+          "y": 6,
+          "label": "L:xy^6"
+        },
+        {
+          "index": 25,
+          "side": "L",
+          "x": 2,
+          "y": 1,
+          "label": "L:x^2y"
+        },
+        {
+          "index": 43,
+          "side": "L",
+          "x": 3,
+          "y": 7,
+          "label": "L:x^3y^7"
+        },
+        {
+          "index": 60,
+          "side": "L",
+          "x": 5,
+          "y": 0,
+          "label": "L:x^5"
+        },
+        {
+          "index": 71,
+          "side": "L",
+          "x": 5,
+          "y": 11,
+          "label": "L:x^5y^11"
+        },
+        {
+          "index": 90,
+          "side": "L",
+          "x": 7,
+          "y": 6,
+          "label": "L:x^7y^6"
+        },
+        {
+          "index": 124,
+          "side": "L",
+          "x": 10,
+          "y": 4,
+          "label": "L:x^10y^4"
+        },
+        {
+          "index": 125,
+          "side": "L",
+          "x": 10,
+          "y": 5,
+          "label": "L:x^10y^5"
+        },
+        {
+          "index": 138,
+          "side": "L",
+          "x": 11,
+          "y": 6,
+          "label": "L:x^11y^6"
+        },
+        {
+          "index": 146,
+          "side": "R",
+          "x": 0,
+          "y": 2,
+          "label": "R:y^2"
+        },
+        {
+          "index": 174,
+          "side": "R",
+          "x": 2,
+          "y": 6,
+          "label": "R:x^2y^6"
+        },
+        {
+          "index": 186,
+          "side": "R",
+          "x": 3,
+          "y": 6,
+          "label": "R:x^3y^6"
+        },
+        {
+          "index": 199,
+          "side": "R",
+          "x": 4,
+          "y": 7,
+          "label": "R:x^4y^7"
+        },
+        {
+          "index": 201,
+          "side": "R",
+          "x": 4,
+          "y": 9,
+          "label": "R:x^4y^9"
+        },
+        {
+          "index": 259,
+          "side": "R",
+          "x": 9,
+          "y": 7,
+          "label": "R:x^9y^7"
+        },
+        {
+          "index": 267,
+          "side": "R",
+          "x": 10,
+          "y": 3,
+          "label": "R:x^10y^3"
+        },
+        {
+          "index": 271,
+          "side": "R",
+          "x": 10,
+          "y": 7,
+          "label": "R:x^10y^7"
+        },
+        {
+          "index": 281,
+          "side": "R",
+          "x": 11,
+          "y": 5,
+          "label": "R:x^11y^5"
+        },
+        {
+          "index": 286,
+          "side": "R",
+          "x": 11,
+          "y": 10,
+          "label": "R:x^11y^10"
+        }
+      ]
+    }
+  ]
+}
